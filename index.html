@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+        integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+    <title>My top WebSite</title>
+</head>
+
+<body>
+    <header class="header" id="home">
+        <nav>
+            <a href="index.html"><img
+                    src="https://www.pngplay.com/wp-content/uploads/13/Yamaha-Motor-Company-Background-PNG-Image.png"
+                    class="logo"></a>
+            <div class="nav-links" id="navLinks">
+                
+                <div>
+                    <img src="data:image/svg+xml;base64,PHN2ZyBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLW1pdGVybGltaXQ9IjIiIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJtMTIuMDAyIDIuMDA1YzUuNTE4IDAgOS45OTggNC40OCA5Ljk5OCA5Ljk5NyAwIDUuNTE4LTQuNDggOS45OTgtOS45OTggOS45OTgtNS41MTcgMC05Ljk5Ny00LjQ4LTkuOTk3LTkuOTk4IDAtNS41MTcgNC40OC05Ljk5NyA5Ljk5Ny05Ljk5N3ptMCAxLjVjLTQuNjkgMC04LjQ5NyAzLjgwNy04LjQ5NyA4LjQ5N3MzLjgwNyA4LjQ5OCA4LjQ5NyA4LjQ5OCA4LjQ5OC0zLjgwOCA4LjQ5OC04LjQ5OC0zLjgwOC04LjQ5Ny04LjQ5OC04LjQ5N3ptMCA3LjQyNSAyLjcxNy0yLjcxOGMuMTQ2LS4xNDYuMzM5LS4yMTkuNTMxLS4yMTkuNDA0IDAgLjc1LjMyNS43NS43NSAwIC4xOTMtLjA3My4zODQtLjIxOS41MzFsLTIuNzE3IDIuNzE3IDIuNzI3IDIuNzI4Yy4xNDcuMTQ3LjIyLjMzOS4yMi41MzEgMCAuNDI3LS4zNDkuNzUtLjc1Ljc1LS4xOTIgMC0uMzg0LS4wNzMtLjUzLS4yMTlsLTIuNzI5LTIuNzI4LTIuNzI4IDIuNzI4Yy0uMTQ2LjE0Ni0uMzM4LjIxOS0uNTMuMjE5LS40MDEgMC0uNzUxLS4zMjMtLjc1MS0uNzUgMC0uMTkyLjA3My0uMzg0LjIyLS41MzFsMi43MjgtMi43MjgtMi43MjItMi43MjJjLS4xNDYtLjE0Ny0uMjE5LS4zMzgtLjIxOS0uNTMxIDAtLjQyNS4zNDYtLjc0OS43NS0uNzQ5LjE5MiAwIC4zODUuMDczLjUzMS4yMTl6IiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48L3N2Zz4=" class="fa fa-close" onclick="hideMenu()">
+                </div>
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#info">INFO</a></li>
+                    <li><a href="#team">TEAM</a></li>
+                    <li><a href="#blog">OUR BLOG</a></li>
+                    <li><a href="#about">CONTACTS</a></li>
+                </ul>
+            </div>
+            <img src="data:image/svg+xml;base64,PHN2ZyBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLW1pdGVybGltaXQ9IjIiIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJtMTIuMDAyIDIuMDA1YzUuNTE4IDAgOS45OTggNC40OCA5Ljk5OCA5Ljk5NyAwIDUuNTE4LTQuNDggOS45OTgtOS45OTggOS45OTgtNS41MTcgMC05Ljk5Ny00LjQ4LTkuOTk3LTkuOTk4IDAtNS41MTcgNC40OC05Ljk5NyA5Ljk5Ny05Ljk5N3ptMCAxLjVjLTQuNjkgMC04LjQ5NyAzLjgwNy04LjQ5NyA4LjQ5N3MzLjgwNyA4LjQ5OCA4LjQ5NyA4LjQ5OCA4LjQ5OC0zLjgwOCA4LjQ5OC04LjQ5OC0zLjgwOC04LjQ5Ny04LjQ5OC04LjQ5N3ptNC45OTggMTEuNzQ1YzAtLjQxNC0uMzM2LS43NS0uNzUtLjc1aC04LjVjLS40MTQgMC0uNzUuMzM2LS43NS43NXMuMzM2Ljc1Ljc1Ljc1aDguNWMuNDE0IDAgLjc1LS4zMzYuNzUtLjc1em0wLTMuMjQ4YzAtLjQxNC0uMzM2LS43NS0uNzUtLjc1aC04LjVjLS40MTQgMC0uNzUuMzM2LS43NS43NXMuMzM2Ljc1Ljc1Ljc1aDguNWMuNDE0IDAgLjc1LS4zMzYuNzUtLjc1em0wLTMuMjUyYzAtLjQxNC0uMzM2LS43NS0uNzUtLjc1aC04LjVjLS40MTQgMC0uNzUuMzM2LS43NS43NXMuMzM2Ljc1Ljc1Ljc1aDguNWMuNDE0IDAgLjc1LS4zMzYuNzUtLjc1eiIgZmlsbC1ydWxlPSJub256ZXJvIi8+PC9zdmc+" class="fa fa-bars" onclick="showMenu()">
+        </nav>
+        <div class="text-cont">
+            <h1>The Best Enduro motorcycles</h1>
+            <p>It's true, you meet the nicest people on a motorcycle! After a weekend of camping and riding some really
+                amazing trails, they felt like family. <br> Meet the crew and read on to hear about what they have in
+                store for the event. </p>
+            <a href="" class="hero-btn">Come to us To know more about enduro</a>
+        </div>
+
+    </header>
+
+    <!-- next -->
+
+    <section class="enduro" id="info">
+        <h1>Enduro Top!</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+
+        <div class="row">
+            <div class="enduro-col">
+                <h3>Top motorcycles</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident quaerat velit eum. Eveniet
+                    impedit tenetur, cumque provident distinctio, natus eaque nobis sed cupiditate a tempora explicabo
+                    laudantium suscipit, corporis fugiat?</p>
+            </div>
+            <div class="enduro-col">
+                <h3>Top helmets</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident quaerat velit eum. Eveniet
+                    impedit tenetur, cumque provident distinctio, natus eaque nobis sed cupiditate a tempora explicabo
+                    laudantium suscipit, corporis fugiat?</p>
+            </div>
+            <div class="enduro-col">
+                <h3>Top tires</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident quaerat velit eum. Eveniet
+                    impedit tenetur, cumque provident distinctio, natus eaque nobis sed cupiditate a tempora explicabo
+                    laudantium suscipit, corporis fugiat?</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- team -->
+
+    <section class="team" id="team">
+        <h1>Our Team</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+        <div class="row">
+            <div class="team-col">
+                <img
+                    src="https://omoimot.ru/photos/user/4/posts/new/14805917445982_graham_jarvis_rockstar_energy_husqvarna_factory_racing_2.jpg">
+                <div class="layer">
+                    <h3>GRAHAM JARVIS</h3>
+                </div>
+            </div>
+            <div class="team-col">
+                <img src="https://www.kenda.by/upload/iblock/efa/mnvh7ijrkib2jsdqsdt1jekzjbthhu2l.jpg" height="383px">
+                <div class="layer">
+                    <h3>DANILA CHERNYAEV</h3>
+                </div>
+            </div>
+            <div class="team-col">
+                <img src="https://dirtbikemagazine.com/wp-content/uploads/2017/11/A-Stefan-Everts-2.jpg" height="383px">
+                <div class="layer">
+                    <h3>STEFAN EVERTS</h3>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- motorcycles -->
+
+    <section class="motorcycles" id="blog">
+        <h1>The Best Motorcycles</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="row">
+            <div class="moto-col">
+                <img src="https://static.tildacdn.com/tild3861-3233-4133-a165-306132306633/trece-presentacion-d.jpg">
+                <h3>Beautiful Yamaha</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, sed sunt. Totam tempore perspiciatis
+                    nobis distinctio quibusdam tenetur! Nihil recusandae odio totam, sunt enim molestias minima officiis
+                    praesentium fuga dolores.</p>
+
+            </div>
+            <div class="moto-col">
+                <img src="https://albatros-yamaha.ru/wp-content/uploads/2018/02/img-1-1.jpg">
+                <h3>Beautiful Yamaha</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, sed sunt. Totam tempore perspiciatis
+                    nobis distinctio quibusdam tenetur! Nihil recusandae odio totam, sunt enim molestias minima officiis
+                    praesentium fuga dolores.</p>
+
+            </div>
+            <div class="moto-col">
+                <img
+                    src="https://5koleso.ru/wp-content/uploads/2019/art/files/u11338/2019_yam_wr450f_eu_dpbse_sta_002-61940.jpg">
+                <h3>Beautiful Yamaha</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, sed sunt. Totam tempore perspiciatis
+                    nobis distinctio quibusdam tenetur! Nihil recusandae odio totam, sunt enim molestias minima officiis
+                    praesentium fuga dolores.</p>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Anything -->
+
+    <section class="any">
+
+        <h1>What s new?</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+        <div class="row">
+            <div class="any-col">
+                <img src="https://motocrossactionmag.com/wp-content/uploads/2022/12/Star-Racing-Yamaha-450-team-Eli-Tomac-Dylan-Ferrandis-Justin-Cooper-1.jpg">
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla tenetur deserunt porro asperiores at ipsum adipisci ipsa, magni exercitationem totam suscipit minima rerum praesentium fugiat saepe sunt quidem eligendi cum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam cumque accusamus natus illo maxime ipsa cum atque laboriosam eveniet aut, neque nemo libero consectetur tempora! Consequuntur autem excepturi esse reiciendis.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    
+
+<!-- questions -->
+    <section class="about">
+        <h1>Any questions?</h1>
+        <a href="" class="hero-btn">WRIGHT TO OUR MANAGER</a>
+    </section>
+<hr>
+    <!-- footer -->
+    <footer class="foot" id="about">
+        <h4>About us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto dolorem reprehenderit fugiat facere ullam sed commodi, <br> suscipit aspernatur pariatur neque vel, in repellat alias. Culpa, amet? Maiores quia nisi est.</p>
+
+        <div class="icons">
+           <a href="https://vk.com/leshka_siu"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTkgMGgtMTRjLTIuNzYxIDAtNSAyLjIzOS01IDV2MTRjMCAyLjc2MSAyLjIzOSA1IDUgNWgxNGMyLjc2MiAwIDUtMi4yMzkgNS01di0xNGMwLTIuNzYxLTIuMjM4LTUtNS01em0uMjUgMTYuOTk2aC0yLjEzNGMtMS4yMDUgMC0xLjQwOS0uNjg3LTIuNDAxLTEuNjc5LS44OTctLjg5Ny0xLjM5NS0uMjA5LTEuMzc0IDEuMDY4LjAwNi4zMzktLjE2MS42MTEtLjU2Ni42MTEtMS4yNjQgMC0zLjA4LjE3OC00LjkxOC0xLjgwNi0xLjg4My0yLjAzMy0zLjg1Ny02LjExMS0zLjg1Ny02LjUxMyAwLS4yMzcuMTk2LS4zNDQuNTI0LS4zNDRoMi4xN2MuNTc0IDAgLjYyMy4yODQuNzgzLjY0OS42NjcgMS41MjEgMi4yNjUgNC41NzQgMi42OSAyLjg3LjI0NC0uOTc4LjM0NC0zLjI0NS0uNzAzLTMuNDQtLjU5NC0uMTEuNDUyLS43NDYgMS45NjgtLjc0Ni4zNzcgMCAuNzg2LjA0MSAxLjIwNS4xMzcuNzY5LjE3OS43NzEuNTIzLjc2MSAxLjAyNi0uMDM5IDEuOTAzLS4yNjkgMy4xODQuMjMzIDMuNTA3LjQ3OS4zMSAxLjczOS0xLjcxNyAyLjQwMy0zLjI4MS4xODMtLjQzMy4yMTktLjcyMi43MzQtLjcyMmgyLjY1NGMxLjM5IDAtLjE4MiAxLjk5Ny0xLjM4MyAzLjU1Ny0uOTY4IDEuMjU1LS45MTYgMS4yOC4yMDkgMi4zMjQuODAzLjc0NCAxLjc1IDEuNzYgMS43NSAyLjMzNi4wMDIuMjcyLS4yMS40NDYtLjc0OC40NDZ6Ii8+PC9zdmc+" class="fa fa-vk"></a> 
+
+            <a href="https://t.me/leshka_siu"><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj48c3ZnIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgeG1sbnM6c2VyaWY9Imh0dHA6Ly93d3cuc2VyaWYuY29tLyIgc3R5bGU9ImZpbGwtcnVsZTpldmVub2RkO2NsaXAtcnVsZTpldmVub2RkO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDoxLjQxNDIxOyI+PHBhdGggaWQ9InRlbGVncmFtLTMiIGQ9Ik0xOSwyNGwtMTQsMGMtMi43NjEsMCAtNSwtMi4yMzkgLTUsLTVsMCwtMTRjMCwtMi43NjEgMi4yMzksLTUgNSwtNWwxNCwwYzIuNzYyLDAgNSwyLjIzOSA1LDVsMCwxNGMwLDIuNzYxIC0yLjIzOCw1IC01LDVabS0yLjc0NCwtNS4xNDhjMC4yMTUsMC4xNTMgMC40OTEsMC4xOTEgMC43MzgsMC4wOTdjMC4yNDYsLTAuMDkzIDAuNDI4LC0wLjMwNCAwLjQ4MywtMC41NmMwLjU3OSwtMi43MjIgMS45ODUsLTkuNjE0IDIuNTEyLC0xMi4wOWMwLjAzOSwtMC4xODcgLTAuMDI3LC0wLjM4MSAtMC4xNzMsLTAuNTA2Yy0wLjE0NywtMC4xMjQgLTAuMzUxLC0wLjE2IC0wLjUzMiwtMC4wOTNjLTIuNzk1LDEuMDM0IC0xMS40MDQsNC4yNjQgLTE0LjkyMyw1LjU2N2MtMC4yMjMsMC4wODIgLTAuMzY4LDAuMjk3IC0wLjM2MSwwLjUzM2MwLjAwOCwwLjIzNSAwLjE2NywwLjQ0IDAuMzk1LDAuNTA5YzEuNTc4LDAuNDcxIDMuNjUsMS4xMjggMy42NSwxLjEyOGMwLDAgMC45NjcsMi45MjQgMS40NzIsNC40MWMwLjA2MywwLjE4NyAwLjIxLDAuMzM0IDAuNDAyLDAuMzg0YzAuMTkzLDAuMDUgMC4zOTcsLTAuMDAyIDAuNTQxLC0wLjEzOGMwLjgxMSwtMC43NjUgMi4wNjQsLTEuOTQ4IDIuMDY0LC0xLjk0OGMwLDAgMi4zODEsMS43NDYgMy43MzIsMi43MDdabS03LjM0LC01Ljc4NGwxLjExOSwzLjY5MmwwLjI0OSwtMi4zMzhjMCwwIDQuMzI0LC0zLjkgNi43OSwtNi4xMjRjMC4wNzIsLTAuMDY1IDAuMDgyLC0wLjE3NCAwLjAyMiwtMC4yNTFjLTAuMDYsLTAuMDc3IC0wLjE2OSwtMC4wOTUgLTAuMjUxLC0wLjA0M2MtMi44NTcsMS44MjUgLTcuOTI5LDUuMDY0IC03LjkyOSw1LjA2NFoiLz48L3N2Zz4=" class="fa fa-telegram"></a>
+
+            <a href="https://mail.google.com/"><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0xOSAyNGgtMTRjLTIuNzYxIDAtNS0yLjIzOS01LTV2LTE0YzAtMi43NjEgMi4yMzktNSA1LTVoMTRjMi43NjIgMCA1IDIuMjM5IDUgNXYxNGMwIDIuNzYxLTIuMjM4IDUtNSA1em0tLjE0MS02LjMzM2MuNjMgMCAxLjE0MS0uNTEyIDEuMTQxLTEuMTQydi05LjA1YzAtLjYzLS41MTEtMS4xNDItMS4xNDEtMS4xNDJoLTEzLjcxOGMtLjYzIDAtMS4xNDEuNTEyLTEuMTQxIDEuMTQydjkuMDVjMCAuNjMuNTExIDEuMTQyIDEuMTQxIDEuMTQyaDEzLjcxOHptLTYuODU5LTQuMDU4bC02LjIyOC00LjMyMS0uMDE0IDcuNzEyaDEyLjQ1N3YtNy43MTJsLTYuMjE1IDQuMzIxem01LjkxMy02LjYwOWMtMS43NDUgMS4yMTUtNS45MTMgNC4xNTMtNS45MTMgNC4xNTNsLTUuOTQ3LTQuMTUzaDExLjg2eiIvPjwvc3ZnPg=="  class="fa fa-gmail"></a>
+
+           <a href="https://youtu.be/rzcFsykYPgA"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTAgOS4zMzNsNS4zMzMgMi42NjItNS4zMzMgMi42NzJ2LTUuMzM0em0xNC00LjMzM3YxNGMwIDIuNzYxLTIuMjM4IDUtNSA1aC0xNGMtMi43NjEgMC01LTIuMjM5LTUtNXYtMTRjMC0yLjc2MSAyLjIzOS01IDUtNWgxNGMyLjc2MiAwIDUgMi4yMzkgNSA1em0tNCA3Yy0uMDItNC4xMjMtLjMyMy01LjctMi45MjMtNS44NzctMi40MDMtLjE2NC03Ljc1NC0uMTYzLTEwLjE1MyAwLTIuNTk4LjE3Ny0yLjkwNCAxLjc0Ny0yLjkyNCA1Ljg3Ny4wMiA0LjEyMy4zMjMgNS43IDIuOTIzIDUuODc3IDIuMzk5LjE2MyA3Ljc1LjE2NCAxMC4xNTMgMCAyLjU5OC0uMTc3IDIuOTA0LTEuNzQ3IDIuOTI0LTUuODc3eiIvPjwvc3ZnPg=="  class="fa fa-youtube"></a> 
+
+            <p>Made with <img src="data:image/svg+xml;base64,PHN2ZyBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLW1pdGVybGltaXQ9IjIiIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJtMTIgNS43MmMtMi42MjQtNC41MTctMTAtMy4xOTgtMTAgMi40NjEgMCAzLjcyNSA0LjM0NSA3LjcyNyA5LjMwMyAxMi41NC4xOTQuMTg5LjQ0Ni4yODMuNjk3LjI4M3MuNTAzLS4wOTQuNjk3LS4yODNjNC45NzctNC44MzEgOS4zMDMtOC44MTQgOS4zMDMtMTIuNTQgMC01LjY3OC03LjM5Ni02Ljk0NC0xMC0yLjQ2MXoiIGZpbGwtcnVsZT0ibm9uemVybyIvPjwvc3ZnPg==" class="heart"> by Leshka</p>
+        </div>
+
+    </footer>
+    <!-- js -->
+    <script src="main.js"></script>
+</body>
+</html>
